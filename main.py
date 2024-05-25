@@ -8,19 +8,15 @@ client = Groq(
     api_key = os.environ['GROQ_API_KEY']
 )
 
-#
-
 st.sidebar.title('Hello there!')
-st.sidebar.text("""Thank you for your interest in 
-my application.
 
-Please be aware that this is only
-a Proof of Concept and may contain
-bugs or unfinished features.
+st.sidebar.markdown(
+"""Thank you for your interest in  my application.
+    
+Please be aware that this is only a Proof of Concept and may contain bugs or unfinished features.
+    
+If you like this app you can follow me on [bartoszkokocinski.pl](https://bartoszkokocinski.pl/) ❤️""")
 
-If you like this app ❤ you can ️
-follow me on bartoszkokocinski.pl)
-for news and updates.""")
 
 if prompt := st.chat_input():
     st.chat_message("user").write(prompt)
