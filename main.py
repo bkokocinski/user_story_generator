@@ -19,7 +19,7 @@ a Proof of Concept and may contain
 bugs or unfinished features.
 
 If you like this app ❤ you can ️
-follow me on [bartoszkokocinski.pl](https://bartoszkokocinski.pl/)
+follow me on bartoszkokocinski.pl)
 for news and updates.""")
 
 if prompt := st.chat_input():
